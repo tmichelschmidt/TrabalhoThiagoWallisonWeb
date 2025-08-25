@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+
+<body>
+
+  <header>
+    <div>
+
+      <div class="cabecalho">
+        <div class="LogoGear"> GEAR <img src="assets/img/LogoGear.png" alt="">
+        </div>
+
+        <nav>
+          <a href="Gear.html">LOJA</a>
+          <a href="#">COMUNIDADE</a>
+          <a href="#">SOBRE</a>
+          <a href="#">SUPORTE</a>
+        </nav>
+        <div class="steam-actions">
+          <a href="Login.html" class="btn btn-login">Entrar</a>
+          <button class="btn btn-install">Instalar Gear</button>
+        </div>
+        <main>
+      </div>
+  </header>
+
+  <div class="categorias">
+    <nav class="fundocategorias">
+      <a href="#">Sua Loja</a>
+      <a href="#">Novaidades e destaques</a>
+      <a href="#">categorias</a>
+      <a href="#">Loja de Pontos</a>
+      <a href="#">Notícias</a>
+      <input type="text" name="busca" id="">
+    </nav>
+  </div>
+
+  <div class="destaques">
+
+  </div>
+
+
+  <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <!-- JOGO 1 -->
+      <div class="game">
+        <img class="main-image" src="assets/img/Jason_and_Lucia_02_With_Logos_landscape.jpg" alt="GTA 6">
+        <div class="thumbnails">
+          <img src="assets/img/Lucia_Caminos_01.jpg" alt="">
+          <img src="assets/img/Jason_Duval_05.jpg" alt="">
+          <img src="assets/img/Vice_City_03.jpg" alt="">
+          <img src="assets/img/Vice_City_04.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="titulo">Grand Theft Auto VI</div>
+          <div class="preco">R$ 499,90</div>
+        </div>
+      </div>
+
+      <!-- JOGO 2 -->
+
+      <div class="game">
+        <img class="main-image" src="assets/img/Cyberpunk.avif" alt="Cyberpunk">
+        <div class="thumbnails">
+          <img src="assets/img/cyberpunk 1.jpg" alt="">
+          <img src="assets/img/cyberpunk 2.jpg" alt="">
+          <img src="assets/img/cyberpunk 3.jpg" alt="">
+          <img src="assets/img/cyberpunk 4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="titulo">Cyberpunk 2077</div>
+          <div class="preco">R$ 199,90</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="controls">
+      <button onclick="prev()">‹</button>
+      <button onclick="next()">›</button>
+    </div>
+  </div>
+
+  <script>
+    let index = 0;
+    function showSlide() {
+      const carousel = document.getElementById("carousel");
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function next() {
+      const total = document.querySelectorAll(".game").length;
+      index = (index + 1) % total;
+      showSlide();
+    }
+
+    function prev() {
+      const total = document.querySelectorAll(".game").length;
+      index = (index - 1 + total) % total;
+      showSlide();
+    }
+    
+  </script>
+
+
+<footer>
+  <p>&copy; 2025 - Todos os direitos reservados</p>
+  <p>Entre em contato pelo e-mail: gearcontact@suport.com 
+  <p>© 2025 Gear Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos
+    no Brasil e em outros países.</p>
+  IVA incluso em todos os preços onde aplicável. Política de Privacidade | Termos Legais | Acordo de Assinatura do Gear
+  | Reembolsos | Cookies</p>
+  <nav>
+    <ul>
+      <li><a href="#">Termos de uso</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+      <li><a href="#">Sobre nós</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</body>
+</html>

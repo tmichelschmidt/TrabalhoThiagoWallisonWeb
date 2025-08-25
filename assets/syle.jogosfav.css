@@ -1,0 +1,191 @@
+header {
+    background-color: rgb(23, 29, 37);
+    color: white;
+    padding: 22px 20px;
+    
+}
+
+.cabecalho {
+    display: flex;
+   margin: 0px 26%;
+    gap: 10%;
+}
+
+header a {
+    text-decoration: none;
+    color: withe;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+   
+   display: flex;
+    padding: 0px 10px;
+   align-items: center;
+    
+}
+
+nav a {
+    display: flex ;
+    padding: 0px 100px;
+    margin: 0 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    
+
+}
+.LogoGear {
+    font-size: 40px;
+    margin: 5px 10px;
+    font-weight: bold;
+    color: #3A414C;
+    display: flex;
+}
+
+nav a:hover {
+    background-color: rgb(51, 171, 241);
+
+
+}
+
+
+img {
+ height: 50px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.categorias {
+   margin: 3% 26%;
+    display: flex;
+    
+    gap: 10%;
+    background-color: #376a99;
+    color: #fff;
+}
+
+.destaques {
+    margin: 3% 10%;
+    gap: 10%;
+    color: #fff;
+}
+    .steam-actions {
+      display: flex;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .steam-actions .btn {
+      padding: 6px 12px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .btn-login {
+      background-color: #5c7e10;
+      color: white;
+    }
+
+    .btn-login:hover {
+      background-color: #6a9628;
+    }
+
+    .btn-install {
+      background-color: #66c0f4;
+      color: black;
+    }
+
+    .btn-install:hover {
+      background-color: #417a9b;
+    }
+
+ .container{
+   padding-left: 480px;
+   padding-right: 480px;
+ }
+        body {
+           
+              background-color: #1b2838;
+            color: #c6d4df;
+          
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+
+        h1 {
+            color: #fff;
+            margin-bottom: 30px; 
+            font-weight: 700;
+            font-size: 36px; 
+            text-align: center;
+            text-shadow: 0 1px 3px #000;
+        }
+
+        .game-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px; 
+        }
+
+        .game {
+            background-color: #15202b;
+            padding: 20px 25px; 
+            box-shadow: inset 0 0 8px #0008;
+            transition: background-color 0.3s ease;
+            cursor: default;
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .game:hover {
+            background-color: #29475f;
+        }
+
+        .game-img {
+            width: 90px; 
+            height: 120px; 
+          
+            flex-shrink: 0;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+
+        .game-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-name {
+            font-size: 22px; 
+            font-weight: 700;
+            color: #66c0f4;
+            margin-bottom: 12px; 
+            text-shadow: 0 1px 2px #0008;
+        }
+
+        .game-info {
+            font-size: 16px; 
+            display: flex;
+            justify-content: space-between;
+            color: #adbac7;
+        }
+
+        .achievements {
+            color: #8f9bb3;
+            display: flex;
+        }
+      

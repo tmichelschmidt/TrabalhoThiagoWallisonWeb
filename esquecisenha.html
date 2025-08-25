@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="assets/style.login.css">
+
+</head>
+<header>
+        <div> 
+
+            <div class="cabecalho">
+        <div class="LogoGear"> GEAR <img src="assets/img/LogoGear.png" alt="">
+  </div>  
+  
+        <nav>
+       <a href="Gear.html">LOJA</a>
+        <a href="#">COMUNIDADE</a>
+        <a href="#">SOBRE</a>
+        <a href="#">SUPORTE</a> 
+              </nav>
+        <div class="steam-actions">
+      <a href="Login.html" class="btn btn-login">Entrar</a>
+      <button class="btn btn-install">Instalar Gear</button>
+    </div>
+        </div>
+    </header>  
+
+<body>
+  
+  <div class="login-container">
+    <div class="login-box">
+
+      <h2>Esqueci Minha Senha</h2>
+
+      <form>
+        <label for="username">Endereço de e-mail</label>
+        <input type="text" id="username" placeholder="Digite seu Endereço de e-mail" required />
+
+        </form>  <br>
+        <div class="cads"><button type="submit" id="meuBotao"> Recuperar</button></div>
+       <div id="minhaResposta" style="display: none;">
+        <br>
+
+      <p>Foi enviado o codigo de recuperação ao seu E-Mail.</p>
+  </div>
+
+</div>
+</div>
+
+    <script>    document.getElementById("meuBotao").addEventListener("click", function() {
+      var resposta = document.getElementById("minhaResposta");
+      if (resposta.style.display === "none") {
+        resposta.style.display = "block";
+      } else {
+        resposta.style.display = "none";
+      }
+    });</script>
+
+</body>
+</html>
+
+
+ <footer>
+	<p>&copy; 2025 - Todos os direitos reservados</p>
+	<p>Entre em contato pelo e-mail: gearcontact@suport.com <br>
+    <p>© 2025 Gear Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos no Brasil e em outros países.</p>
+IVA incluso em todos os preços onde aplicável.   Política de Privacidade   |   Termos Legais   |   Acordo de Assinatura do Gear   |   Reembolsos   |   Cookies</p>
+	<nav>
+		<ul>
+			<li><a href="#">Termos de uso</a></li>
+			<li><a href="#">Política de privacidade</a></li>
+			<li><a href="#">Sobre nós</a></li>
+		</ul>
+	</nav>
+  </footer>
+
